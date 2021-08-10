@@ -33,6 +33,7 @@ function setup() {
 var options={
 	
 	restitution:0.3,
+	frictionAir:1,
 	density:0.05
 	
 	
@@ -65,6 +66,6 @@ function draw() {
 
 function jump(){
 	if(keyCode=== UP_ARROW)
-	Matter.Body.applyForce(ball, {x:0,y:0},{x:0.05,y:0.05  })
+	Matter.Body.applyForce(ball, {x:0,y:0},{x:0.5,y:-2  })
 
 }
